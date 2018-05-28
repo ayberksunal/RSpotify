@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(class)\n\n#to shuffle the rows\n#we do not wanna sorted years\neurovisionSorted<-featuresEurovision2[order(featuresEurovision2$danceability),]\n\n#to get the all columns we want\neurovisionPredictionData <- eurovisionSorted[1:591,4:15]\n\n#gets out of prediction columns\ntrainingSet <- eurovisionPredictionData[1:491, 1:11]\ntestSet <- eurovisionPredictionData[492:591, 1:11]\n\n#gets prediction columns\ntrainingOutcomes <- eurovisionPredictionData[1:491, 12]\ntestOutcomes <- eurovisionPredictionData[492:591, 12]\n\n\n#train the machine\npredictions <- knn(train = trainingSet, cl = trainingOutcomes, k = 5,test = testSet)\n\ntable(predictions,testOutcomes)\n\n\ndeneme<-subset(eurovisionSorted ,select=c(\"danceability\",\"energy\",\"key\",\"loudness\",\"mode\",\"speechiness\",\"acousticness\" ,\"instrumentalness\", \"liveness\",\"valence\",\"tempo\",\"duration_ms\",\"time_signature\", \"Yıl\",\"Enerjisi\"))\n\n##########################################################################################\n",
+    "created" : 1513593603913.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2481539091",
+    "id" : "4AA0B766",
+    "lastKnownWriteTime" : 1514308039,
+    "last_content_update" : 1514308039375,
+    "path" : "~/RSpotify/prediction.R",
+    "project_path" : "prediction.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

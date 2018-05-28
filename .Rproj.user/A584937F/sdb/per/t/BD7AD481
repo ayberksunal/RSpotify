@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "\n#to write the frame to cvs\nwrite.csv(featuresEurovision, file = \"MyDatafeaturesEurovision.csv\")\n\ncolors = c(\"red\", \"yellow\", \"green\", \"violet\", \"orange\",\"blue\", \"pink\", \"cyan\")\n\ncorrelationValue<-cor(featuresEurovision$danceability,featuresEurovision$energy)\n\nstringCorrelation<-paste(\"Dancebility (Correlation =\" , correlationValue,\")\")\n\nplot(featuresEurovision$danceability,featuresEurovision$energy,col =\"red\",xlab =stringCorrelation,ylab = \"Energy\")\n\n\n#histogram of eurovision winners  and energy\nhist(Winners$energy,  right=FALSE, col=colors, main=\"Winners 2000-2018\",  xlab=\"Low Energy to High Energy\",ylab = \"Number of Winning\")\n\n#histogram of energy and how many song \nhist(featuresEurovision$energy,  right=FALSE, col=colors, main=\"Songs 2000-2018\",  xlab=\"Low Energy to High Energy\",ylab = \"How many songs\")\n\n#birinci gelenlerin yıl ve enerji\nplot(birinciGelenYilli$X..Yil..,birinciGelenYilli$X..energy..,col=\"red\",xlab = \"years\",ylab = \"energy\")\n",
+    "created" : 1513598127331.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3181254784",
+    "id" : "BD7AD481",
+    "lastKnownWriteTime" : 1513771570,
+    "last_content_update" : 1513771570834,
+    "path" : "~/RSpotify/drawGraphs.R",
+    "project_path" : "drawGraphs.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

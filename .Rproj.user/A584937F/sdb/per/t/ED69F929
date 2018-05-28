@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1514307806403.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "ED69F929",
+    "lastKnownWriteTime" : 0,
+    "last_content_update" : 1514307806403,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "7F5F144A",
+        "caption" : "eurovisionPredictionData",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=eurovisionPredictionData&cache_key=7F5F144A",
+        "displayedObservations" : 591,
+        "environment" : "",
+        "object" : "eurovisionPredictionData",
+        "preview" : 0,
+        "totalObservations" : 591,
+        "variables" : 12
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
